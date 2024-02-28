@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*em和i斜体文字不倾斜*/
+em,
+i {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    /*照顾低版本浏览器*/
+    border: 0;
+    vertical-align: middle
+}
+a {
+    text-decoration: none;
+    color:#2e2e2e;
+}
+
+button {
+    /*鼠标经过button时变成小手*/
+    cursor: pointer
+}
+
+@font-face {
+    font-family: 'SimSun';
+    src: url('../simsun.ttf') format('truetype'); /* 替换 'path/to/simsun.ttf' 为字体文件路径 */
+}
+
+body {
+    background-color: #f6f5f8;
+    /*抗锯齿形*/
+    -webkit-font-smoothing: antialiased;
+    color: #2e2e2e;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+    font-size: 15px;
+    font-family: 'SimSun', Arial, sans-serif;
+}
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* 隐藏滚动条 */
+}

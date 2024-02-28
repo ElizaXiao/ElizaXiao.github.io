@@ -1,0 +1,104 @@
+.header {
+    width: 40%;
+    height: 50px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.header img {
+    position: absolute;
+    width: 100%; /* 图片宽度充满容器 */
+    height: 100%;
+}
+.header .title {
+    position: absolute;
+    width: 100%; /* 图片宽度充满容器 */
+    height: 100%;
+    top: 50%; /* 盒子相对于容器垂直居中 */
+    left: 50%; /* 盒子相对于容器水平居中 */
+    transform: translate(-50%, -50%); /* 通过 transform 属性调整盒子的位置 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .title p {
+    font-size: 20px;
+}
+.nav {
+    height: 20px;
+    width: 70%;
+    margin: 10px auto;
+}
+.nav .back {
+    position: relative;
+    height: 20px;
+    width: 40px;
+}
+.nav img {
+    position: absolute;
+    height: 20px;
+    width: 40px;
+}
+.nav .back .text {
+    position: absolute;
+    height: 20px;
+    width: 40px;
+    display: flex; /* 使用 Flex 布局 */
+    justify-content: center; /* 在主轴上居中对齐 */
+    align-items: center;
+}
+.nav .back .text a {
+    font-size: 12px;
+    cursor: pointer;
+}
+.content {
+    width: 70%;
+    height: 400px;
+    margin: 25px auto;
+    position: relative;
+}
+.content img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.content .table {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top: 50%; /* 盒子相对于容器垂直居中 */
+    left: 50%; /* 盒子相对于容器水平居中 */
+    transform: translate(-50%, -50%);
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 在主轴上居中对齐 */
+    align-items: center; /* 在交叉轴上居中对齐 */
+}
+.content table {
+    width: 100%; /* 表格宽度占据整个父容器 */
+    border-collapse: collapse; /* 合并边框 */
+}
+th, td {
+    border: 1px solid #ddd; /* 设置单元格边框 */
+    padding: 10px; /* 设置单元格内边距 */
+    text-align: center; /* 文本左对齐 */
+}
+td {
+    font-size: 13px;
+}
+
+.content .express {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top: 50%; /* 盒子相对于容器垂直居中 */
+    left: 50%; /* 盒子相对于容器水平居中 */
+    transform: translate(-50%, -50%);
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-direction: column;
+    justify-content: center; /* 在主轴上居中对齐 */
+}
+.content .express p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
