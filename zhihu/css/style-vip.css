@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*em和i斜体文字不倾斜*/
+em,
+i {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    /*照顾低版本浏览器*/
+    border: 0;
+    vertical-align: middle
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    /*鼠标经过button时变成小手*/
+    cursor: pointer
+}
+body {
+    background-color: #f6f5f8;
+    /*抗锯齿形*/
+    -webkit-font-smoothing: antialiased;
+    color: #2e2e2e;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+    font-size: 15px;
+}
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+.art {
+    position: relative;
+}
+.vip-black-hair{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.2),transparent);
+    z-index: 4;
+}
+
+
+.header {
+    width: 100%;
+    height: 52px;
+    margin: 0 auto;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    /*z-index: 1;*/
+}
+
+.header-ul{
+    margin-left: 30px;
+    list-style: none;
+    display: flex;
+}
+
+.header-li{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    list-style: none;
+    height: 52px;
+    line-height: 52px;
+    box-sizing: border-box;         /*怪异盒模型，将边框撑开盒子的效果消除*/
+}
+
+
+.header-ul .now {
+    font-weight: 700;
+    border-bottom: 4px solid #ce994f;
+}
+/*.header-li:visited {*/
+/*    color: #000000;*/
+/*    font-weight: 700;*/
+/*    border-bottom: #056de8 solid 4px;*/
+/*}*/
+
+.header-input{
+    position: relative;
+    display: flex;
+    margin-left: 20px;
+    border-radius: 18px;
+    background-color:hsla(0,0%,100%,.12);
+    width: 400px;
+    height: 34px;
+    align-items: center;
+}
+
+.header-input-icon{
+    position: absolute;
+    right: 20px;
+}
+
+.send-button{
+    background-image: linear-gradient(117deg,#f8e2c4,#f3bb6c);
+    border-radius: 18px;
+    height: 34px;
+    width: 70px;
+    color: #754e19;
+    line-height: 34px;
+    text-align: center;
+    margin-left: 12px;
+    cursor:pointer;/*变为可点击的*/
+    font-size: 14px;
+}
+
+.header-right{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.message-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    height: 22px;
+    color: #fff;
+    opacity: .4;
+}
+
+.header-right .header-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    border: 0;
+}
+.header-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.vip {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.vip-inner {
+    display: flex;
+    position: absolute;
+    width: 900%;
+    height: 480px;
+    left: -100%;
+    z-index: 1;
+}
+.inner{
+    width: calc(100%/9);
+    height: 480px;
+    float: left;
+}
+.inner img {
+    height: 480px;
+    width: 100%;
+}
+
+
+.list-bottom {
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    z-index: 999;
+
+}
+.list-bottom li {
+    float: left;
+    margin: 0 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.5);
+    cursor: pointer;
+}
+/*.current {*/
+/*    background-color: #fff;*/
+/*    z-index: 5;*/
+/*}*/
+.surface {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    width: 1130px;
+    height: 100%;
+    z-index: 2;
+}
+.registerBox {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 280px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,.04);
+    background-color: #fff;
+    z-index: 3;
+}
+.register1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 152px;
+}
+.head-portrait {
+    margin-top: -17px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.head-portrait img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.head-portrait .name {
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #121212;
+    text-align: center;
+}
+.vip-tip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ce994f;
+    cursor: pointer;
+}
+.vip-button {
+    margin-top: 12px;
+    background-image: linear-gradient(98deg,#f8e2c4,#f3bb6c);
+    width: 240px;
+    height: 32px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 32px;
+    color: #754e19;
+    cursor: pointer;
+}
+
+
+.register2 {
+    position: relative;
+    width: 100%;
+    height: 113px;
+    cursor: pointer;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.register2 img {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.last {
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform:translateY(-50%) rotateY(180deg);
+    z-index: 2;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.6);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
+    z-index: 2;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.last svg,
+.next svg {
+    display: flex;
+}
+
